@@ -9,7 +9,7 @@ export function HSV2RGB([h, s, v]: HSV): RGB {
    * v 明度 在0-1范围
    */
   const c = v * s
-  const x = c * (1 - Math.abs(h / 60) % 2 - 1)
+  const x = c * (1 - Math.abs(h / 60 % 2 - 1))
   const m = v - c
   let r1 = m
   let g1 = m
