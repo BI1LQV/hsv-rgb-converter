@@ -11,13 +11,12 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@bi1lqv/eslint-config": "^0.26.11",
     "element-plus": "^2.2.16",
-    "unplugin-auto-import": "^0.11.2",
-    "unplugin-vue-components": "^0.22.6",
+    "sass": "^1.54.9",
     "vue": "^3.2.38"
   },
   "devDependencies": {
+    "@bi1lqv/eslint-config": "^0.26.11",
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/jsdom": "^20.0.0",
     "@types/node": "^16.11.56",
@@ -29,7 +28,10 @@
     "eslint-plugin-vue": "^9.3.0",
     "jsdom": "^20.0.0",
     "npm-run-all": "^4.1.5",
+    "scss": "^0.2.4",
     "typescript": "~4.7.4",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.6",
     "vite": "^3.0.9",
     "vitest": "^0.23.0",
     "vue-tsc": "^0.40.7"
