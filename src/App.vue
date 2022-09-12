@@ -5,11 +5,9 @@ import HSVSelector from "./components/HSVSelector.vue"
 </script>
 
 <template>
-  <ColorSelector></ColorSelector>
-  <RGBSelector></RGBSelector>
-  <HSVSelector></HSVSelector>
+  <div flex>
+    <ColorSelector></ColorSelector>
+    <RGBSelector></RGBSelector>
+    <HSVSelector></HSVSelector>
+  </div>
 </template>
-
-<style scoped>
-
-</style>

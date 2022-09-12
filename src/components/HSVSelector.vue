@@ -5,14 +5,16 @@ const { h, s, v } = toRefs(hsv)
 </script>
 
 <template>
-  <div class="h">
-    <el-slider v-model="h" show-input :max="360" />
-  </div>
-  <div class="s">
-    <el-slider v-model="s" show-input :max="1" :step="0.01" />
-  </div>
-  <div class="v">
-    <el-slider v-model="v" show-input :max="1" :step="0.01" />
+  <div>
+    <div class="h">
+      <el-slider v-model="h" show-input :max="360" />
+    </div>
+    <div class="s">
+      <el-slider v-model="s" show-input :max="1" :step="0.01" />
+    </div>
+    <div class="v">
+      <el-slider v-model="v" show-input :max="1" :step="0.01" />
+    </div>
   </div>
 </template>
 
