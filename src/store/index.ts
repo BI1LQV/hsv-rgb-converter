@@ -17,12 +17,14 @@ watch(rgb, () => {
     rgbChangeFromHsv = false
     return
   }
-  const { r, g, b } = rgb
-  const { h, s, v } = RGB2HSV({ r: r / 255, g: g / 255, b: b / 255 })
-  hsv.h = Number(h.toFixed(2))
-  hsv.s = Number(s.toFixed(2))
-  hsv.v = Number(v.toFixed(2))
   hsvChangeFromRgb = true
+  setTimeout(() => {
+    const { r, g, b } = rgb
+    const { h, s, v } = RGB2HSV({ r: r / 255, g: g / 255, b: b / 255 })
+    hsv.h = Number(h.toFixed(2))
+    hsv.s = Number(s.toFixed(2))
+    hsv.v = Number(v.toFixed(2))
+  })
 })
 
 watch(hsv, () => {
@@ -30,9 +32,11 @@ watch(hsv, () => {
     hsvChangeFromRgb = false
     return
   }
-  const { r, g, b } = HSV2RGB(hsv)
-  rgb.r = Math.round(r * 255)
-  rgb.g = Math.round(g * 255)
-  rgb.b = Math.round(b * 255)
   rgbChangeFromHsv = true
+  setTimeout(() => {
+    const { r, g, b } = HSV2RGB(hsv)
+    rgb.r = Math.round(r * 255)
+    rgb.g = Math.round(g * 255)
+    rgb.b = Math.round(b * 255)
+  })
 })
