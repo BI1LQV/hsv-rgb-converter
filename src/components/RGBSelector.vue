@@ -18,12 +18,12 @@ const { r, g, b } = toRefs(rgb)
 
 <style scoped lang="scss">
 .red :deep(.el-slider__bar){
-    background-color: #FC240C;
+  background-image: linear-gradient(to right, #c25448,#FC240C);
 }
 .green :deep(.el-slider__bar){
-    background-color: #94E30C;
+  background-image: linear-gradient(to right, #b1dc65,#7abc09);
 }
 .blue :deep(.el-slider__bar){
-    background-color: #1E90FF;
+  background-image: linear-gradient(to right, #5e99d5,#0d64ba);
 }
 </style>
