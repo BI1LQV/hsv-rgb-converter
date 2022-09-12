@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@bi1lqv/eslint-config": "^0.26.11",
+    "element-plus": "^2.2.16",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.6",
     "vue": "^3.2.38"
   },
   "devDependencies": {
