@@ -19,9 +19,9 @@ watch(rgb, () => {
   }
   const { r, g, b } = rgb
   const { h, s, v } = RGB2HSV({ r: r / 255, g: g / 255, b: b / 255 })
-  hsv.h = h
-  hsv.s = s
-  hsv.v = v
+  hsv.h = Number(h.toFixed(2))
+  hsv.s = Number(s.toFixed(2))
+  hsv.v = Number(v.toFixed(2))
   hsvChangeFromRgb = true
 })
 

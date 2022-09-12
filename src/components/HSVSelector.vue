@@ -1,20 +1,19 @@
 <script lang="ts" setup>
 import { toRefs } from "vue"
 import { hsv } from "../store/index"
-// const { r, g, b } = toRefs(rgb)
+const { h, s, v } = toRefs(hsv)
 </script>
 
 <template>
-  {{ hsv }}
-  <!-- <div class="h">
+  <div class="h">
     <el-slider v-model="h" show-input :max="360" />
   </div>
   <div class="s">
-    <el-slider v-model="s" show-input :max="1" />
+    <el-slider v-model="s" show-input :max="1" :step="0.01" />
   </div>
   <div class="v">
-    <el-slider v-model="v" show-input :max="1" />
-  </div> -->
+    <el-slider v-model="v" show-input :max="1" :step="0.01" />
+  </div>
 </template>
 
 <style scoped lang="scss">
