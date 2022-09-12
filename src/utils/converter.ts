@@ -52,6 +52,9 @@ export function RGB2HSV({ r, g, b }: RGB): HSV {
   if (cMax !== 0) {
     s = delta / cMax
   }
+  if (h < 0) {
+    h += 360
+  }
 
   return { h, s, v: cMax }
 }

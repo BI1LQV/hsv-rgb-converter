@@ -14,6 +14,14 @@ describe("rgb2hsv", () => {
       expect(v).approximately(v0, ALLOW_DELTA)
     })
   })
+  it("convert rgb(127,82,93) to correct hsv", () => {
+    const [r, g, b] = [127, 82, 93].map(i => i / 255)
+    const hsv = RGB2HSV({ r, g, b })
+    const { r: r1, g: g1, b: b1 } = HSV2RGB(hsv)
+    expect(r1).approximately(r, ALLOW_DELTA)
+    expect(g1).approximately(g, ALLOW_DELTA)
+    expect(b1).approximately(b, ALLOW_DELTA)
+  })
 })
 
 describe("hsv2rgb", () => {
