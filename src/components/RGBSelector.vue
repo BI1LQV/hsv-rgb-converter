@@ -6,14 +6,14 @@ const { r, g, b } = toRefs(rgb)
 
 <template>
   <div>
-    <div class="red">
-      <el-slider v-model="r" :step="1" show-input :max="255" />
+    <div class="red" flex items-center>
+      R：<el-slider v-model="r" :step="1" show-input :max="255" />
     </div>
-    <div class="green">
-      <el-slider v-model="g" :step="1" show-input :max="255" />
+    <div class="green" flex items-center>
+      G：<el-slider v-model="g" :step="1" show-input :max="255" />
     </div>
-    <div class="blue">
-      <el-slider v-model="b" :step="1" show-input :max="255" />
+    <div class="blue" flex items-center>
+      B：<el-slider v-model="b" :step="1" show-input :max="255" />
     </div>
   </div>
 </template>

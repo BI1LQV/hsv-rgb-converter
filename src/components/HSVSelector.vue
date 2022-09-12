@@ -6,14 +6,14 @@ const { h, s, v } = toRefs(hsv)
 
 <template>
   <div>
-    <div class="h">
-      <el-slider v-model="h" show-input :max="360" />
+    <div class="h" flex items-center flex-shrink>
+      H：<el-slider v-model="h" show-input :max="360" />
     </div>
-    <div class="s">
-      <el-slider v-model="s" show-input :max="1" :step="0.01" />
+    <div class="s" flex items-center flex-shrink>
+      S：<el-slider v-model="s" show-input :max="1" :step="0.01" />
     </div>
-    <div class="v">
-      <el-slider v-model="v" show-input :max="1" :step="0.01" />
+    <div class="v" flex items-center flex-shrink>
+      V：<el-slider v-model="v" show-input :max="1" :step="0.01" />
     </div>
   </div>
 </template>
