@@ -31,6 +31,6 @@ const predefineColors = ref([
 
 <template>
   <div>
-    <el-color-picker v-model="color" :predefine="predefineColors" />
+    <el-color-picker v-model="color" size="large" :predefine="predefineColors" />
   </div>
 </template>

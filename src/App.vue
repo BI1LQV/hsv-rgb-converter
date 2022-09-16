@@ -5,14 +5,27 @@ import HSVSelector from "./components/HSVSelector.vue"
 </script>
 
 <template>
-  <div flex ma items-center flex-col>
+  <div flex ma items-center flex-col w-full>
     <div m-b-10 text-10 m-t--10>
       HSV与RGB互转工具
     </div>
-    <divflex flex ma items-center>
-      <RGBSelector w-90 m-r-20></RGBSelector>
-      <ColorSelector size="large"></ColorSelector>
-      <HSVSelector w-90 m-l-20></HSVSelector>
-    </divflex>
+    <div class="main-wrap" flex ma items-center justify-between>
+      <RGBSelector w-90></RGBSelector>
+      <ColorSelector></ColorSelector>
+      <HSVSelector w-90></HSVSelector>
+    </div>
   </div>
 </template>
+
+<style>
+  @media screen and (min-width: 880px) {
+    .main-wrap {
+      @apply w-220
+    }
+  }
+  @media screen and (max-width: 880px) {
+    .main-wrap {
+      @apply w-full flex-col
+    }
+  }
+</style>
